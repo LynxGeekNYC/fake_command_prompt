@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-  cout<<"Microsoft Windows\n(c) 2019 Microsoft Corporation\n\n";
+  cout<<"Microsoft Windows [Version 10.0.186363.900]\n(c) 2019 Microsoft Corporation. All Rights Reserved.\n\n";
   string mystr;
   cout << "C:\\Windows\\Windows32\\";
   getline (cin, mystr);
