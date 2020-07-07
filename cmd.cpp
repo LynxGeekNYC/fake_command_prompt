@@ -12,12 +12,28 @@ using namespace std;
 
 int main()
 {
-    cout<<"Microsoft Windows\n(c) 2019 Microsoft Corporation\n\n";
-    int i;
-    cout << "C:\\Windows\\Windows32\\";
-    cin >> i;
-    cout << "Text goes here";
+  cout<<"Microsoft Windows\n(c) 2019 Microsoft Corporation\n\n";
+  string mystr;
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Error Loading:" << mystr << "\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
+  cout << "C:\\Windows\\Windows32\\";
+  getline (cin, mystr);
+  cout << "Text Goes here\n";
   return 0;
-
-    return 0;
 }
