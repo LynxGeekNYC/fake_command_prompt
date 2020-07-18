@@ -1,4 +1,5 @@
 Please Donate Via CashApp: LynxGeekNYC or PayPal: mirvisconsulting@gmail.com
+# I have already included the compiled version for the lazy or for people that do not know how to compile C++ (cmd.exe)
 
 # Note: 
 If you are using this program to make YouTube videos, please post a download link and a link to my channel in the video description and let everyone know where they can get the program.
