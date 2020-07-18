@@ -53,7 +53,7 @@ Active Connections
     TCP    192.168.0.103:50636    fjr02s04 - in - f10:https  ESTABLISHED\n");
 
 # Before Install
-Because of the IP Logger, be sure to run it in the VM with all antivirus disabled. Microsoft Frowns upon such actions. See Screen shot on what happens when you try to run the script.
+Because of the IP Logger, be sure to run it in the VM with all antivirus disabled. Microsoft Frowns upon such actions. See Screen shot "virus.png" on what happens when you try to run the script.
 
 # Installation
 You basically have to replace the actual system32\cmd.exe file with this file but be sure to make backups of the actual cmd file.
