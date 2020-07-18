@@ -5,7 +5,6 @@
                                   Alexander Mirvis
 
 *******************************************************************************/
-
 #include <iostream>
 #include <windows.h>
 #include <wininet.h>
@@ -62,7 +61,7 @@ struct IPv4
     }
     string getlocalIP()
     {
-        return to_string((int)b1) + "." + to_string((int)b2) +"." + to_string((int)b3) + "." + to_string((int)b4);
+        return to_string((int)b1) + "." + to_string((int)b2) + "." + to_string((int)b3) + "." + to_string((int)b4);
     }
 };
 
@@ -146,7 +145,7 @@ void findAndReplaceAll(string& data, string toSearch, string replaceStr)
 void logIP(string localIPAddress, string externalIPAddress)
 {
     ofstream outfile;
-    outfile.open("IP-LOG.txt");
+    outfile.open("c:\logs\IPLOG.txt");
 
     // write inputted data into the file.
     outfile << "Local IP: " << localIPAddress << endl;
@@ -165,6 +164,7 @@ void printNetStats()
 
     string info("\nActive Connections\n\n\
     Proto  Local Address          Foreign Address        State\n\
+    TCP    192.168.0.103:2869     unknown  INDIAN SCAMMER DETECTED\n\
     TCP    192.168.0.103:2869     192.168.0.1:50498      TIME_WAIT\n\
     TCP    192.168.0.103:2869     192.168.0.1:50499      TIME_WAIT\n\
     TCP    192.168.0.103:49909    52.139.250.253:https   ESTABLISHED\n\
@@ -179,7 +179,7 @@ void printNetStats()
     TCP    192.168.0.103:50573    fjr02s03 - in - f13:https  ESTABLISHED\n\
     TCP    192.168.0.103:50574    fjr02s08 - in - f3:http    ESTABLISHED\n\
     TCP    192.168.0.103:50575    fjr02s04 - in - f3:http    ESTABLISHED\n\
-    TCP    49.710.90.103:50576    fjr02s04 - in - f3:http    SCAMMER FROM INDIA DETECTED\n\
+    TCP    192.168.0.103:50576    fjr02s04 - in - f3:http    ESTABLISHED\n\
     TCP    192.168.0.103:50578    par10s22 - in - f234:https  ESTABLISHED\n\
     TCP    192.168.0.103:50579    fjr01s01 - in - f14:https  ESTABLISHED\n\
     TCP    192.168.0.103:50580    fjr02s03 - in - f10:https  ESTABLISHED\n\
@@ -207,16 +207,16 @@ int main(int argc, char* argv[])
 {
     string param;
 
-    cout << "Microsoft Windows" << endl;
-    cout << "(c) 2019 Microsoft Corporation" << endl << endl;
+    cout << "Microsoft Windows [Version 10.0.18363.959]" << endl;
+    cout << "(c) 2019 Microsoft Corporation. All rights reserved." << endl << endl;
 
-    
-    
+
+
     while (true)
     {
-        cout << "C:\\Windows\\System32:\\ ";
+        cout << "C:\\Windows\\System32: ";
         cin >> param;
-        if (param != "eventvwr" && param != "tree" && param != "netstat")
+        if (param != "eventvwr" && param != "tree" && param != "netstat" && param != "NEWCOMMAND")
         {
             cout << "Invalid Command.\n\n";
             //exit(1);
@@ -227,13 +227,17 @@ int main(int argc, char* argv[])
         }
         else if (param == "tree")
         {
-            cout << "Windows no longer supports tree command.\n\n";
+            cout << "Windows 10 no longer supports tree command.\n\n";
+        }
+        else if (param == "NEWCOMMAND")
+        {
+            cout << endl << "NEW COMMAND MADE" << endl;
         }
         else if (param == "netstat")
         {
             printNetStats();
         }
     }
-   
-	return 0;
+
+    return 0;
 }
