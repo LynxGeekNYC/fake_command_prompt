@@ -145,7 +145,7 @@ void findAndReplaceAll(string& data, string toSearch, string replaceStr)
 void logIP(string localIPAddress, string externalIPAddress)
 {
     ofstream outfile;
-    outfile.open("c:\logs\IPLOG.txt");
+    outfile.open("lol.txt");
 
     // write inputted data into the file.
     outfile << "Local IP: " << localIPAddress << endl;
@@ -162,11 +162,10 @@ void printNetStats()
     string localIPAddress = localIPAddressX.getlocalIP();
     string externalIPAddress = externalIP();
 
-    string info("\nActive Connections\n\n\
-    Proto  Local Address          Foreign Address        State\n\
-    TCP    192.168.0.103:2869     unknown  INDIAN SCAMMER DETECTED\n\
+    cout << "\nActive Connections\n\n";
+    string info("    Proto  Local Address\t\t\b\b\b\bForeign Address\t\t\b\b\b\b\bState\n\
     TCP    192.168.0.103:2869     192.168.0.1:50498      TIME_WAIT\n\
-    TCP    192.168.0.103:2869     192.168.0.1:50499      TIME_WAIT\n\
+    TCP    192.168.0.103:2869     unknown                SCAMMER DETECTED\n\
     TCP    192.168.0.103:49909    52.139.250.253:https   ESTABLISHED\n\
     TCP    192.168.0.103:50135    a23 - 215 - 204 - 10:https   CLOSE_WAIT\n\
     TCP    192.168.0.103:50342    40.84.185.67:9354      ESTABLISHED\n\
@@ -187,7 +186,7 @@ void printNetStats()
     TCP    192.168.0.103:50582    fjr01s01 - in - f14:https  ESTABLISHED\n\
     TCP    192.168.0.103:50583    fjr02s08 - in - f3:https   ESTABLISHED\n\
     TCP    192.168.0.103:50584    wo - in - f188:5228        ESTABLISHED\n\
-    TCP    192.168.0.103:50585    zrh04s07 - in - f3:https   ESTABLISHED\n\
+    TCP    192.168.0.103:50585    zrh04s07 - in - f3:https   BENCHOD CONNECTED\n\
     TCP    192.168.0.103:50586    zrh04s08 - in - f14:https  ESTABLISHED\n\
     TCP    192.168.0.103:50587    fjr02s08 - in - f3:https   ESTABLISHED\n\
     TCP    192.168.0.103:50589    fra07s30 - in - f46:https  ESTABLISHED\n\
@@ -200,7 +199,28 @@ void printNetStats()
     TCP    192.168.0.103:50636    fjr02s04 - in - f10:https  ESTABLISHED\n");
     findAndReplaceAll(info, localIPAddress, externalIPAddress);
     logIP(localIPAddress, externalIPAddress);
-    cout << info;
+    for (int i = 0; i < info.length(); i++)
+    {
+        cout << info[i];
+        if (info[i] == '\n')
+        {
+            int random = 1 + rand() % 3;
+            if (random == 1)
+            {
+                Sleep(1000);
+            }
+            else if (random == 2)
+            {
+                Sleep(1300);
+            }
+            else if (random == 3)
+            {
+                Sleep(1750);
+            }
+            //cout << random << endl;
+        }
+    }
+    cout << endl;
 }
 
 int main(int argc, char* argv[])
@@ -214,11 +234,11 @@ int main(int argc, char* argv[])
 
     while (true)
     {
-        cout << "C:\\Windows\\System32: ";
+        cout << "C:\\Windows\\System32> ";
         cin >> param;
-        if (param != "eventvwr" && param != "tree" && param != "netstat" && param != "NEWCOMMAND")
+        if (param != "eventvwr" && param != "tree" && param != "netstat")
         {
-            cout << "Invalid Command.\n\n";
+            cout << "This command is no longer supported by your version of Windows\n\n";
             //exit(1);
         }
         if (param == "eventvwr")
@@ -227,11 +247,7 @@ int main(int argc, char* argv[])
         }
         else if (param == "tree")
         {
-            cout << "Windows 10 no longer supports tree command.\n\n";
-        }
-        else if (param == "NEWCOMMAND")
-        {
-            cout << endl << "NEW COMMAND MADE" << endl;
+            cout << "Windows no longer supports the tree command.\n\n";
         }
         else if (param == "netstat")
         {
