@@ -9,6 +9,7 @@ I specifically designed this for Scam Baiting. It is a funny Fake Command Prompt
 Funny thing about "netstat." When they run netstat, they will get this output and will confuse the crap out of these scammers:
 
 Active Connections
+
     Proto  Local Address          Foreign Address        State\n\
     TCP    192.168.0.103:2869     unknown  INDIAN SCAMMER DETECTED\n\     <----- LOL (I'll fix it later and it will show their actual IP)
     TCP    192.168.0.103:2869     192.168.0.1:50498      TIME_WAIT\n\
