@@ -4,7 +4,13 @@ Please Donate Via CashApp: LynxGeekNYC or PayPal: mirvisconsulting@gmail.com
 If you are using this program to make YouTube videos, please post a download link and a link to my channel in the video description and let everyone know where they can get the program.
 
 # Fake Command Prompt for Windows
-I specifically designed this for Scam Baiting. It is a funny Fake Command Prompt Emulator that does funny stuff when the common commands such as "eventvwr," "treet," "netstat," are rand on the command prompt. At the same time, it also logs the end user IP address when they run the "netstat" command and saved in c:\logs\IPLOG.txt file.
+I specifically designed this for Scam Baiting or to annoy the Indian Tech Support Scammers. It is a funny Fake Command Prompt Emulator that does funny stuff when the common commands such as "eventvwr," "treet," "netstat," are rand on the command prompt. At the same time, it also logs the end user IP address when they run the "netstat" command and saved in c:\logs\IPLOG.txt file.
+
+# Fake Commands
+What happens when you run the command?
+TREE - Give error "TREE is no longer supported by your version of Windows."
+EVENTVWR - Will just keep loading and then crash
+NETSTAT - Will display fake IP Connections and also...
 
 Funny thing about "netstat." When they run netstat, they will get this output and will confuse the crap out of these scammers:
 
