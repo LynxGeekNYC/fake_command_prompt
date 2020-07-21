@@ -5,12 +5,12 @@ Please Donate Via CashApp: LynxGeekNYC or PayPal: mirvisconsulting@gmail.com
 If you are using this program to make YouTube videos, please post a download link and a link to my channel in the video description and let everyone know where they can get the program.
 
 # Fake Command Prompt for Windows
-I specifically designed this for Scam Baiting or to annoy the Indian Tech Support Scammers. It is a funny Fake Command Prompt Emulator that does funny stuff when the common commands such as "eventvwr," "treet," "netstat," are rand on the command prompt. At the same time, it also logs the end user IP address when they run the "netstat" command and saved in c:\logs\IPLOG.txt file.
+I specifically designed this for Scam Baiting or to annoy the Indian Tech Support Scammers. It is a funny Fake Command Prompt Emulator that does funny stuff when the common commands such as "eventvwr," "tree," "netstat," on the command prompt. At the same time, it also logs the end user IP address when they run the "netstat" command and saved in lol.txt file in the windows/system32 directory. 
 
 # Fake Commands
 What happens when you run the command?
-TREE - Give error "TREE is no longer supported by your version of Windows."
-EVENTVWR - Will just keep loading and then crash
+TREE - Give error "TREE is no longer supported by your version of Windows." (New Version coming where the tree will show an actual tree output but will endlessly run in a loop.)
+EVENTVWR - Will just keep loading and then crash the command prompt.
 NETSTAT - Will display fake IP Connections and also...
 
 Funny thing about "netstat." When they run netstat, they will get this output and will confuse the crap out of these scammers:
@@ -46,7 +46,7 @@ Active Connections
     TCP    192.168.0.103:50587    fjr02s08 - in - f3:https   ESTABLISHED\n\
     TCP    192.168.0.103:50589    fra07s30 - in - f46:https  ESTABLISHED\n\
     TCP    192.168.0.103:50590    zrh04s07 - in - f174:https  ESTABLISHED\n\
-    TCP    192.168.0.103:50592    zrh04s07 - in - f3:https   ESTABLISHED\n\
+    TCP    192.168.0.103:50592    zrh04s07 - in - f3:https   BENCHOD CONNECTED\n\
     TCP    192.168.0.103:50597    zrh04s07 - in - f174:http  ESTABLISHED\n\
     TCP    192.168.0.103:50598    205:http               ESTABLISHED\n\
     TCP    192.168.0.103:50600    192.168.0.1:ssdp       TIME_WAIT\n\
